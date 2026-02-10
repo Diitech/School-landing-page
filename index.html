@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightFuture Academy | School Landing Page Template</title>
+  <meta name="description" content="BrightFuture Academy school landing page template with clickable menu, logo, and footer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home" aria-label="BrightFuture homepage">
+        <span class="logo-mark" aria-hidden="true">🎓</span>
+        <span>BrightFuture</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+        ☰ Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main Navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#campus">Campus</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary desktop-cta" href="#admissions">Apply Now</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">A place to learn, grow, and lead</p>
+          <h1>Empowering Students for a Bright Tomorrow</h1>
+          <p>
+            A ready-to-use school website template with fully clickable navigation,
+            call-to-action buttons, and structured sections for admissions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#admissions">Start Application</a>
+            <a class="btn btn-secondary" href="#programs">Explore Programs</a>
+          </div>
+          <ul class="hero-stats" aria-label="School highlights">
+            <li><strong>98%</strong><span>Graduation Rate</span></li>
+            <li><strong>25+</strong><span>Student Clubs</span></li>
+            <li><strong>12:1</strong><span>Student-Teacher Ratio</span></li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <h2>Next Open House</h2>
+          <p>Saturday, April 20 • 10:00 AM</p>
+          <p>Tour classrooms, meet our teachers, and explore student life.</p>
+          <a class="btn btn-secondary" href="#admissions">Reserve Your Spot</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <article>
+          <h2>Why Families Choose BrightFuture</h2>
+          <p>
+            We create a supportive environment where curiosity is celebrated,
+            character is nurtured, and students are prepared for college and beyond.
+          </p>
+        </article>
+        <div class="feature-list">
+          <article>
+            <h3>Experienced Faculty</h3>
+            <p>Dedicated teachers who inspire confidence and curiosity.</p>
+          </article>
+          <article>
+            <h3>Personalized Learning</h3>
+            <p>Tailored guidance to help each student thrive academically.</p>
+          </article>
+          <article>
+            <h3>Safe & Inclusive Campus</h3>
+            <p>A welcoming space where every student feels valued and seen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section section-alt">
+      <div class="container">
+        <h2>Academic Programs</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Early Years</h3>
+            <p>Foundational literacy, numeracy, and social development.</p>
+            <a href="#admissions" class="inline-link">Learn more →</a>
+          </article>
+          <article class="card">
+            <h3>Middle School</h3>
+            <p>Inquiry-based learning, STEM projects, and leadership training.</p>
+            <a href="#admissions" class="inline-link">Learn more →</a>
+          </article>
+          <article class="card">
+            <h3>High School</h3>
+            <p>College prep curriculum, career counseling, and AP pathways.</p>
+            <a href="#admissions" class="inline-link">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="campus" class="section">
+      <div class="container">
+        <h2>Campus Life</h2>
+        <p>
+          From robotics and debate to athletics and fine arts, students develop
+          confidence and teamwork through a rich variety of extracurricular opportunities.
+        </p>
+      </div>
+    </section>
+
+    <section id="admissions" class="section section-alt">
+      <div class="container admissions">
+        <div>
+          <h2>Admissions for 2026 Are Open</h2>
+          <p>Begin your journey at BrightFuture Academy today.</p>
+        </div>
+        <form class="admissions-form" aria-label="Admission inquiry form">
+          <label>
+            Student Name
+            <input type="text" placeholder="Enter student name" required />
+          </label>
+          <label>
+            Parent Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Grade Applying For
+            <select required>
+              <option value="">Select grade</option>
+              <option>Kindergarten</option>
+              <option>Grade 1 - 5</option>
+              <option>Grade 6 - 8</option>
+              <option>Grade 9 - 12</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#home" aria-label="Back to top">
+          <span class="logo-mark" aria-hidden="true">🎓</span>
+          <span>BrightFuture</span>
+        </a>
+        <p>123 Learning Lane, Knowledge City</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#home">Back to top</a>
+      </nav>
+      <div>
+        <p>Email: admissions@brightfuture.edu</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> BrightFuture Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
