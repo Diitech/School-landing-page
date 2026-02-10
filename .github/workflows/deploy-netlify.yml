@@ -1,0 +1,27 @@
+name: Deploy static site to Netlify
+
+on:
+  push:
+    branches: ["main", "master", "work"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: .
+          production-branch: work
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "GitHub Actions deploy from ${GITHUB_SHA}"
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+          overwrites-pull-request-comment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
